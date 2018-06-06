@@ -1,0 +1,8 @@
+{
+  "name": "FCCFXboxLoggerIonic",
+  "app_id": "379d1a2c",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
