@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Patient Manager</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label color="primary" stacked>Nombre</ion-label>
+            <ion-input type="text" placeholder="John"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="primary" stacked>Apellido paterno</ion-label>
+            <ion-input type="text" placeholder="Doe"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="primary" stacked>Apellido materno</ion-label>
+            <ion-input type="text" placeholder="Tesla"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="primary" stacked>Fecha de nacimiento</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" [(ngModel)]="myDate" min="2005" max ="2018"></ion-datetime>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <img src="https://www.shareicon.net/data/2016/06/25/786527_people_512x512.png"/>
+            </ion-col>
+            <ion-col>
+              <img src="https://www.shareicon.net/data/2016/06/25/786533_people_512x512.png"/>
+            </ion-col>
+          </ion-row>
+          <ion-row >
+            <ion-col>
+              <img src="https://www.shareicon.net/data/128x128/2016/06/25/786524_people_512x512.png"/>
+            </ion-col>
+            <ion-col>
+              <img src="https://image.flaticon.com/icons/svg/163/163828.svg"/>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button color="secondary">Guardar</button>
+
+</ion-content>
