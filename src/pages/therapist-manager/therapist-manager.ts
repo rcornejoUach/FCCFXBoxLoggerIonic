@@ -34,6 +34,7 @@ export class TherapistManagerPage {
 
     this.camera.getPicture(options).then((imageData) => {
       this.image = 'data:image/jpeg;base64,' + imageData;
+
       }, (err) => {
         this.displayErrorAlert(err);
       });
